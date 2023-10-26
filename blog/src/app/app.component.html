@@ -1,0 +1,186 @@
+
+<app-header></app-header>
+
+<p>
+	<ngb-alert [dismissible]="false">
+		<strong>Warning!</strong> Better check yourself, you're not looking too good.
+	</ngb-alert>
+</p>
+<div ngbAccordion #accordion="ngbAccordion">
+	<div ngbAccordionItem="first">
+		<h2 ngbAccordionHeader>
+			<button ngbAccordionButton>First panel</button>
+		</h2>
+		<div ngbAccordionCollapse>
+			<div ngbAccordionBody>
+				<ng-template>
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+					officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+					moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+					keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+					butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+					haven't heard of them accusamus labore sustainable VHS.
+				</ng-template>
+			</div>
+		</div>
+	</div>
+	<div ngbAccordionItem="second">
+		<h2 ngbAccordionHeader>
+			<button ngbAccordionButton>Second panel</button>
+		</h2>
+		<div ngbAccordionCollapse>
+			<div ngbAccordionBody>
+				<ng-template>
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+					officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+					moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+					keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+					butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+					haven't heard of them accusamus labore sustainable VHS.
+				</ng-template>
+			</div>
+		</div>
+	</div>
+    
+</div>
+
+<hr />
+
+<button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.toggle('first')">Toggle first</button>
+<button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.toggle('second')">Toggle second</button>
+<button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.expandAll()">Expand all</button>
+<button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.collapseAll()">Collapse all</button>
+
+<!-- <br/>
+<br/>
+<button (click)="toggle()">Toggle</button>
+<div *ngIf="display">
+    Heading Tag
+    <h1>Hello</h1>
+    <h1>Jayesh</h1>
+    <h1>Panchasara</h1>
+</div> -->
+<!-- <form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+    
+    <input type="text" ngModel name="user" placeholder="Enter User Name"/>
+    <br/><br/>
+    <input type="text" ngModel name="email" placeholder="Enter User Email"/>
+    <br/><br/>
+    <input type="text" ngModel name="password" placeholder="Enter User Password"/>
+    <br/><br/>
+    <button>Register</button>
+</form>
+<ul>
+    <li>{{userData.user}}</li>
+    <li>{{userData.email}}</li>
+    <li>{{userData.password}}</li>
+</ul> -->
+
+<!-- <h1 class="text">Hello Angular12 {{title}}</h1> -->
+
+
+<!-- <h1 [style.color]="colortwo" [style.backgroundColor]="bgcolor">Hello, Jayesh Panchasara</h1>
+<button (click)="updatecolor()">Update</button> -->
+
+<!-- <ul *ngFor="let user of Users">
+    <li>Name: {{user.name}}</li>
+    <li>Email: {{user.email}}</li>
+    <li>Account</li>
+    <ul *ngFor="let account of user.socialAccounts">
+        <li>{{account}}</li>
+    </ul>
+</ul> -->
+
+<!-- <h3 *ngFor="let item of users"> {{item}}</h3>
+<h3 *ngFor="let item of userDetails">{{item.name}} / {{item.email}} / {{item.phone}}</h3> -->
+
+<!-- <div [ngSwitch]="color1">
+    <h1 *ngSwitchCase="'red'" style="color1: red;">Red Color</h1>
+    <h1 *ngSwitchCase="'green'" style="color1: green;">Red Color</h1>
+    <h1 *ngSwitchCase="'blue'" style="color1: blue;">Red Color</h1>
+    <h1 *ngSwitchDefault>Unknow color</h1>
+
+</div> -->
+
+<!-- <ng-template [ngIf]="color==='red'">
+    <h1 style="color: red;">Red Color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='green'">
+    <h1 style="color: green;">Red Color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='blue'">
+    <h1 style="color: blue;">Red Color</h1>
+</ng-template> -->
+
+<!-- <div><h1 *ngIf="show; then ifBlock else elseBlock"></h1>
+    <ng-template #ifBlock>
+        <h1>If condition</h1>
+    </ng-template>
+    <ng-template #elseBlock>
+        <h1>Else condition</h1>
+    </ng-template>
+    <button (click)="showchange()">change value</button></div>
+<h1 *ngIf="name=='Jayesh'; then ifnameBlock else elsenameBlock"></h1>
+        <ng-template #ifnameBlock>
+            <h1>Yes,my name is jayesh</h1>
+        </ng-template>
+        <ng-template #elsenameBlock>
+            <h1>No,My name is not Pradip</h1>
+        </ng-template>
+         -->
+
+
+<!-- <div><input type="text" name="user-name" value={{name}} disabled={{disable}} />
+    <br/><br/>
+    <input type="text" name="user-name" [value]=name [disabled]=disable/>
+    <br/><br/>
+    <button (click)="chagevalue()">change value</button></div> -->
+
+
+<!-- <div><button (click)="counter('ddd')">--</button>
+    <h2>Count:   {{count}}</h2>
+    <button (click)="counter('Add')">++</button>
+    </div> -->
+
+
+<!-- <input type="text" #box1 name="name" placeholder="Event Name"/>
+<button class="button" (click)="getValue(box1.value)">Click</button>
+<br/>
+<h3>Your Name is :{{displayVal}}</h3> -->
+
+<!-- <button class="button" (click)="getName()">Click Me</button>
+<button (click)="getNametwo('jayesh','panchasara')">Click Me 2</button> -->
+
+<!-- <br />
+<br />
+<button (click)="getData('Hello')">Called function</button>
+<br/>
+<br/>
+<input type="text" #box (keyup)="getData(box.value)" placeholder="Event keyup" />
+<br/>
+<br/>
+<input type="text" #box1 ((keydown))="getData(box1.value)" placeholder="Event keydown"/>
+<br/>
+<br/>
+<input type="text" #box2 (blur)="getData(box2.value)" placeholder="Event blur"/>
+<br/>
+<br/>
+<input type="text" #box3 (input)="getData(box3.value)" placeholder="Event input"/>
+<br/>
+<br/>
+<h1 (mouseover)="getData('over')">code step by step</h1>
+<h1 (mouseleave)="getData('leave')">Jayesh Panchasara</h1> -->
+
+<!-- <h2>Hello {{data}}<h2>
+<h2>Hello {{getValue()}}</h2> -->
+
+<!-- <h1>2+2</h1>
+<h1>{{2+5}}</h1>
+<h1>{{2+2/2}}</h1>
+<h1>{{title==="blog"}}</h1> -->
+
+<!-- <app-login></app-login>
+<app-user-list></app-user-list>
+<app-student-list></app-student-list>
+<app-countryt-list></app-countryt-list> -->
+
