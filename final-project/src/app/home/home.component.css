@@ -1,0 +1,115 @@
+.home-container{
+    display: flex;
+    .all-movies{
+        width: 75%;
+        min-height:calc(100vh) ;
+        border-right: 1px solid #fdc827;
+        padding: 20px 40px;
+        font-family: "Roboto",sans-serif;
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+      
+            .text {
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: bold;
+                border-left: 5px solid #ff9900;
+                padding-left: 10px;
+            }
+            .view-all {
+                color: #ff9900;
+                cursor: pointer;
+                
+            }
+        }
+        .movies-thumbnail{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+            .movie {
+                .cover {
+                    width: 75%;
+                    .images {
+                        height: 130px;
+                        width: 130px;
+                        border-radius: 5px;
+                    }
+                }
+                .detail{
+                    width: 75%;
+                    .name{
+                        font-weight: bold;
+                        height: 40px;
+                        margin-top: 5px;
+                        width: 150px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        
+       
+    }
+    .popular-movies {
+        width: 25%;
+        min-height: calc(100vh - 80px);
+        padding: 20px 40px;
+        font-family: "Roboto", sans-serif;
+        .top {
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+      
+            .text {
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: bold;
+                border-left: 5px solid #ff9900;
+                padding-left: 10px;
+            }
+            
+        }
+        
+        .movies {
+           
+          .movie {
+            margin-bottom: 5px;
+            margin-top: 5px;
+            display: inline;
+            justify-content: space-between;
+            .name {
+              font-weight: bold;
+              font-size: 15px;
+              cursor: pointer;
+            }
+            
+          }
+          .view-all {
+            color: #ff9900;
+            text-align: right;
+            margin-top: 30px;
+            cursor: pointer;
+          }
+        }
+      }
+   
+}
+
+
+.rating{
+    position: relative;
+    justify-content: space-between;
+    .rating-value{
+        position: absolute;
+       top: 8px;
+       font-size: 12px;
+        right: 0;
+        font-weight: bold;
+    }
+}
+.jay{
+    padding-top: 30px;
+}

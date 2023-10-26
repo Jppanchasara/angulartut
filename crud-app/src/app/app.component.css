@@ -1,0 +1,17 @@
+.example-spacer{
+    flex: 1 1 auto;
+}
+.main-body{
+    padding: 30px;
+    margin: 0 auto;
+
+   .field {
+        width: 100%;
+    }
+
+    
+}
+.action {
+    display: flex;
+    gap: 10px;
+  }

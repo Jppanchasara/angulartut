@@ -1,12 +1,91 @@
-
 <app-header></app-header>
+<h1>{{title}}</h1>
+<h1 appRedEl>{{title}}</h1>
+<h1 appRedEl>Hello, How are you</h1>
+ <!-- <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <input type="text" placeholder="Enter name" name="name" formControlName="user">
+    <br/>
+    <span style="color: red; size: 5px;" *ngIf="user&& user.invalid && user.touched">This filed is not valid</span>
+    <br/>
+    <input type="password" placeholder="Enter Password" name="password" formControlName="password">
+    <br/>
+    <span style="color: red; size: 5px;" *ngIf="password&& password.invalid && password.touched">This filed is not valid</span>
+    <br/><br/>
+    <button [disabled]="loginForm.invalid">Login</button>
+</form> -->
 
-<p>
+
+<!-- <form #loginForm="ngForm" (ngSubmit)=userLogin(loginForm.value)>
+    <input type="text" placeholder="Enter name" name="name" ngModel>
+    <br/><br/>
+    <input type="password" placeholder="Enter Password" name="password" ngModel>
+    <br/><br/>
+    <button >Login</button>
+</form>
+<br/>
+<button (click)="userLogin(loginForm.value)">Out side button</button> -->
+
+<!-- <h2>{{20 | usdInr:72.36}}</h2> -->
+
+<!-- <h1>{{title | slice:3 :10 |uppercase}}</h1>
+<h1>{{user | json |uppercase}}</h1>
+<h2>{{2606.2002 | number : '2.2-3'}}</h2>s
+<h2>{{2.3 | number:'3.3-5'}}</h2>
+<h2>{{20 | currency:'USD' }}</h2> -->
+
+<!-- <h1>{{title | uppercase}}</h1>
+<h1>{{title | lowercase}}</h1>
+<h1>{{title }}</h1>
+<h3>{{date}}</h3>
+<h3>{{date | date :'fullDate'}}</h3>
+<h1>{{capString(title)}}</h1> -->
+
+
+<!-- <input type="text" #box name="UserName" placeholder="Enter user name">
+<button (click)="getVal(box)">Call Function</button> -->
+
+<!-- <input type="text" [(ngModel)]="name">
+<h3>{{name}}</h3> -->
+
+<!-- <app-child-two (updateDataEvent)="childTwo($event)"></app-child-two>
+<h4>Your name: {{data}}</h4>
+ -->
+
+
+<!-- <ul *ngFor="let user of userDetails"><app-user-details [item]=user ></app-user-details></ul>
+ -->
+
+<!-- <app-child [item]="data"></app-child>
+<br/>
+<br/>
+<button (click)="updateChild()">Update Child Component</button> -->
+
+<!-- <input type="text" placeholder="Enter new Task" #task/>
+<br/><br/>
+<button (click)="addTask(task.value)">Add Task</button>
+<br/>
+<ul *ngFor="let item of list"><li>{{item.name}}<button (click)="removeTask(item.id)">Remove</button></li></ul>
+ -->
+
+<!-- <mat-slide-toggle min="1" max="100" value="1">Toggle me!</mat-slide-toggle><br/><br/>
+<div class="example-button-row">
+    <button mat-flat-button>Basic</button>
+    <button mat-flat-button color="primary">Primary</button>
+    <button mat-flat-button color="accent">Accent</button>
+    <button mat-flat-button color="warn">Warn</button>
+    <button mat-flat-button disabled>Disabled</button>
+    <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
+  </div>
+  <br/>
+  <br/> -->
+
+
+<!-- <p>
 	<ngb-alert [dismissible]="false">
 		<strong>Warning!</strong> Better check yourself, you're not looking too good.
 	</ngb-alert>
 </p>
-<div ngbAccordion #accordion="ngbAccordion">
+<div ngbAccordion #accordion="ngbAccordion">s
 	<div ngbAccordionItem="first">
 		<h2 ngbAccordionHeader>
 			<button ngbAccordionButton>First panel</button>
@@ -43,13 +122,11 @@
 	</div>
     
 </div>
-
 <hr />
-
 <button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.toggle('first')">Toggle first</button>
 <button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.toggle('second')">Toggle second</button>
 <button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.expandAll()">Expand all</button>
-<button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.collapseAll()">Collapse all</button>
+<button class="btn btn-sm btn-outline-primary me-2" (click)="accordion.collapseAll()">Collapse all</button> -->
 
 <!-- <br/>
 <br/>

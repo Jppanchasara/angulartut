@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {NgForm} from'@angular/forms';
+import { FormControl,FormGroup ,Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,83 @@ import {NgForm} from'@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'blog';
+  title = 'Blog Angular 12';
+
+  // loginForm= new FormGroup({
+  //   user: new FormControl('',[Validators.required,Validators.email]),
+  //   password:new FormControl('',[Validators.required,Validators.minLength(5)])
+  // })
+  // get user(){
+  //   return this.loginForm.get('user');
+  // }
+  // get password(){
+  //   return this.loginForm.get('password');
+  // }
+  // loginUser(){
+  //   console.warn(this.loginForm.value);
+  // }
+
+  // userLogin(item:any){
+  //   console.warn(item)
+  // }
+
+  // user={
+  //   name:'Jayesh',
+  //   Page:29
+  // }
+
+  // date=Date();
+  // capString(item:string){
+  //   return item.toUpperCase();
+  // }
+
+ 
+  // data:{name:String,phone:number}={name:'jayesh',phone:565656};
+  // item:string[]=["hello","hi","Jayesh"]
+  // itemttwo:number| string=20;
+  // itemThree:number[]=[20,50,60,42,89];
+  // getData(item:{name:string,phone:string}){
+  //   if(typeof item==="number"){
+  //     return item*20;
+  //   }
+  // }
+
+  // getVal(item:HTMLInputElement){
+  //   console.warn(item);
+  // }
+
+  // name:any;
+
+  // data=""
+  // childTwo(item:string){
+  //   console.warn(item);
+  //   this.data=item;
+  // }
+
+  // userDetails=[
+  //       {name:'Anil',email:'anil@gmail.com',},
+  //       {name:'Pradip',email:'pradip@gmail.com',},
+  //       {name:'Rahul',email:'rahul@gmail.com',},
+  //       {name:'Ravi',email:'ravi@gmail.com',},
+  //       {name:'Jayesh',email:'jayesh@gmail.com',}
+  // ]
+
+
+  // data=10;
+  // updateChild(){
+  //   this.data=Math.floor(Math.random()*10) ;
+  // }
+
+
+  // list:any[]=[];
+  // addTask(item:String){
+  //   console.warn(item)
+  //   this.list.push({id:this.list.length,name:item})
+  // }
+  // removeTask(id:number){
+  //   console.warn(id)
+  //   this.list=this.list.filter(item=>item.id!==id)
+  // }
 
  
   // userData:any={};

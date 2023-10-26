@@ -1,0 +1,69 @@
+.login-container{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffe645 0%,#e2aa02 100%);
+    position: absolute;
+    .logo{
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'Creepster',cursive;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+    .desc{
+        font-size: 18px;
+        font-family: 'Aladin',cursive;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 140px;
+        right: 50px;
+        text-align: right;
+        width: 750px;
+
+    }
+    .film{
+        position: absolute;
+        padding-top: 50px;
+        left: 50px;
+        width: 400px;
+        height: 100%; 
+    }
+    .login-form{
+        width: 350px;
+        height: 223px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 35px;
+        right: 50px;
+        box-shadow: 5px 5px 20px #383838 ;
+        .form-group{
+           
+            .label{
+                font-weight: bold;
+                padding-bottom: 5px;
+            }
+           
+        }
+        .btn-cintainer{
+            position: relative;
+            .btn{
+                margin-top: 15px;
+    
+            }
+            .error{
+                position: absolute;
+                top: px;
+                bottom: 0px;
+                right: 0px;
+                color: red;
+            }
+             
+        }
+        
+    }
+    
+}

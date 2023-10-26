@@ -11,7 +11,14 @@ import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatButtonModule} from'@angular/material/button';
+import { ChildComponent } from './child/child.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { ChildTwoComponent } from './child-two/child-two.component';
+import { UsdInrPipe } from './pipes/usd-inr.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RedElDirective } from './red-el.directive';
 
 @NgModule({
   declarations: [
@@ -20,16 +27,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     StudentListComponent,
     CountrytListComponent,
     HeaderComponent,
+    ChildComponent,
+    UserDetailsComponent,
+    ChildTwoComponent,
+    UsdInrPipe,
+    RedElDirective,
 
   
   ],
   imports: [
+    ReactiveFormsModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,
     UserAuthModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatButtonModule
 
 
   ],
